@@ -1,0 +1,192 @@
+/* Reset default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar styles */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    background-color: #010101;
+}
+
+
+/* Survey form styles */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.survey-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.survey-form input,
+.survey-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.survey-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.survey-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+/* Footer styles */
+
+
+/* Style for the survey form */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+
+/* Style for the footer */
+
+footer {
+    background-color: #010101;
+    padding: 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.footer-logo h3 {
+    display: inline-block;
+    margin: 0;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer-links ul,
+.footer-contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-credits {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-credits p {
+    margin: 0;
+}
+
+.footer-credits a {
+    color: #333;
+}
+
+.footer-credits a:hover {
+    text-decoration: underline;
+}
