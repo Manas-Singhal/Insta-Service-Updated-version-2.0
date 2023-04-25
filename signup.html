@@ -1,80 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
     <title>Sign Up</title>
     <style>
         body {
-            background-color: #f8f8f8;
-            font-family: 'Helvetica Neue', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 50px;
         }
         
         form {
             background-color: #fff;
-            max-width: 500px;
+            width: 50%;
             margin: 0 auto;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        }
-        
-        h2 {
-            text-align: center;
-            font-size: 28px;
-            margin-bottom: 40px;
-            color: #222;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         }
         
         label {
             display: block;
-            margin-bottom: 10px;
-            color: #666;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        input[type=date],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
             font-size: 16px;
         }
         
-        input[type="text"],
-        input[type="email"],
-        input[type="password"] {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 30px;
-            border: 2px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-            font-size: 18px;
-            color: #555;
-        }
-        
-        input[type="submit"] {
-            background-color: #25a187;
+        button[type=submit] {
+            background-color: #4CAF50;
             color: #fff;
-            padding: 15px 30px;
             border: none;
-            border-radius: 5px;
-            font-size: 18px;
+            border-radius: 3px;
+            padding: 10px;
             cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
+            font-size: 16px;
         }
         
-        input[type="submit"]:hover {
-            background-color: #1e7c67;
+        button[type=submit]:hover {
+            background-color: #3e8e41;
         }
     </style>
 </head>
 
 <body>
+    <h1>Sign Up</h1>
     <form>
-        <h2>Sign Up</h2>
-        <label for="name">Name:</label>
+        <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
+
+        <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Password:</label>
+
+        <label for="password">Password</label>
         <input type="password" id="password" name="password" required>
-        <input type="submit" value="Sign Up">
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+				<option value="">--Select--</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="non-binary">Non-Binary</option>
+				<option value="prefer-not-to-say">Prefer not to say</option>
+			</select>
+
+        <button type="submit">Sign Up</button>
     </form>
 </body>
 
