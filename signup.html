@@ -12,6 +12,8 @@
         h1 {
             text-align: center;
             margin-top: 50px;
+            color: #333;
+            text-shadow: 1px 1px #fff;
         }
         
         form {
@@ -27,6 +29,7 @@
             display: block;
             font-weight: bold;
             margin-bottom: 5px;
+            color: #333;
         }
         
         input[type=text],
@@ -41,6 +44,19 @@
             border-radius: 3px;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
             font-size: 16px;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 2px solid #ddd;
+            box-sizing: border-box;
+        }
+        
+        input[type=text]:focus,
+        input[type=email]:focus,
+        input[type=password]:focus,
+        input[type=date]:focus,
+        select:focus {
+            background-color: #fff;
+            border: 2px solid #4CAF50;
         }
         
         button[type=submit] {
@@ -51,10 +67,24 @@
             padding: 10px;
             cursor: pointer;
             font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: background-color 0.3s ease-in-out;
         }
         
         button[type=submit]:hover {
             background-color: #3e8e41;
+        }
+        
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2012%207%22%3E%3Cpath%20d%3D%22M1%201L6%206%2011%201%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 12px;
+            padding-right: 30px;
         }
     </style>
 </head>
